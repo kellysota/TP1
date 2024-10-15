@@ -18,13 +18,22 @@ def mark_task_as_done():
         print("No tasks to mark as done.")
         return
 
+def sort_tasks():
+    """Sort tasks alphabetically."""
+    if not tasks:
+        print("No tasks to sort.")
+    else:
+        tasks.sort()  # Sort the tasks list alphabetically
+        print("Tasks sorted alphabetically.")
+
 
 while True:
     print("\nPick a task: ")
     print("1. Display the tasks")
     print("2.Add a task")
     print("3. Mark a task as done")
-    print("4. DONE!")
+    print("4. Sort tasks alphabetically")
+    print("5. DONE!")
         
     choice = input(">")
 
@@ -38,6 +47,9 @@ while True:
         mark_task_as_done()
 
     elif choice == '4':
+        sort_tasks()
+
+    elif choice == '5':
         break
 
     else:
