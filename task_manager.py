@@ -34,8 +34,7 @@ while True:
     print("1. Display the tasks")
     print("2.Add a task")
     print("3. Mark a task as done")
-    print("4. Sort tasks alphabetically")
-    print("5. DONE!")
+    print("4. DONE!")
         
     choice = input(">")
 
@@ -48,10 +47,8 @@ while True:
     elif choice == '3':
         mark_task_as_done()
 
-    elif choice == '4':
-        sort_tasks()
 
-    elif choice == '5':
+    elif choice == '4':
         break
 
     else:
