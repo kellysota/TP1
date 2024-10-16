@@ -1,5 +1,6 @@
 tasks = []
 
+
 def add_task():
     task = input("Enter a new task: ")
     tasks.append(task)
